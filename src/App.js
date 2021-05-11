@@ -7,7 +7,6 @@ import Header from "./components/Header/Header";
 import Navbar from "./components/Navbar/Navbar";
 import Profile from "./components/Profile/Profile";
 
-////////////////////////////////
 const App = (props) => {
   return (
     <BrowserRouter>
@@ -24,8 +23,7 @@ const App = (props) => {
             render={() => (
               <Profile
                 profilePage={props.state.profilePage}
-                addPost={props.addPost}
-                updateNewPostText={props.updateNewPostText}
+                dispatch={props.dispatch}
               />
             )}
           />
